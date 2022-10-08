@@ -26,21 +26,38 @@
       }
     </style>
   </head>
+
   <body>
     <header>
-      <nav>
-        <ol>
+      <nav class="flex h-16 items-center justify-between px-5">
+        <p class="text-2xl font-extrabold text-slate-700">easybank</p>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <ol
+          class="absolute top-20 left-0 right-0 z-10 mx-auto w-[90%] rounded-lg bg-white py-4 text-center font-semibold [&>li]:px-2 [&>li]:py-2"
+          id="menu"
+        >
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
           <li>Blog</li>
           <li>Careers</li>
         </ol>
+        <label class="block h-6 w-6" for="menu-toggle"
+          ><img
+            class="hamburger h-full w-full object-contain"
+            src="images/icon-hamburger.svg"
+            alt=""
+          />
+          <img
+            class="close h-full w-full object-contain"
+            src="images/icon-close.svg"
+          />
+        </label>
       </nav>
 
       <!-- Request Invite -->
 
-      <div class="grid gap-6 py-4 text-center">
+      <div class="grid gap-6 pb-4 text-center">
         <div class="grid grid-cols-1 overflow-y-hidden">
           <img
             class="col-start-1 row-start-1 -mt-[2.25rem]"
@@ -225,7 +242,7 @@
         href="#"
         >Request Invite</a
       >
-      <p>© Easybank. All Rights Reserved</p>
+      <p class="text-slate-400">© Easybank. All Rights Reserved</p>
     </footer>
   </body>
 </html>

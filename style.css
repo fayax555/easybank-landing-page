@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#menu {
+  display: none;
+  box-shadow: 0px 80px 120px 30px rgba(8, 15, 59, 0.5),
+    0px -5px 20px 10px rgba(8, 15, 59, 0.3);
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+#menu-toggle ~ label .hamburger {
+  display: block;
+}
+
+#menu-toggle ~ label .close {
+  display: none;
+}
+
+#menu-toggle:checked ~ label .hamburger {
+  display: none;
+}
+
+#menu-toggle:checked ~ label .close {
+  display: block;
+}
