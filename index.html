@@ -27,10 +27,10 @@
     </style>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden ">
     <header>
       <nav
-        class="fixed inset-0 bottom-auto flex h-16 items-center justify-between bg-white px-5 sm:hidden"
+        class="fixed inset-0 bottom-auto z-50 flex h-16 items-center justify-between bg-white px-5 sm:hidden"
       >
         <img src="images/logo.svg" alt="" />
         <input class="hidden" type="checkbox" id="menu-toggle" />
@@ -58,7 +58,7 @@
       </nav>
 
       <nav
-        class="fixed inset-0 bottom-auto z-10 hidden bg-white shadow-lg sm:block"
+        class="fixed inset-0 bottom-auto z-50 hidden bg-white shadow-lg sm:block"
       >
         <div
           class="mx-auto flex h-20 max-w-[1094px] items-center justify-between px-4"
@@ -80,23 +80,21 @@
       </nav>
 
       <div
-        class="mx-auto grid max-w-[1096px] justify-center gap-6 pb-4 text-center sm:-mb-52 sm:h-[680px] sm:grid-cols-[380px,auto] sm:items-center sm:overflow-hidden sm:px-4"
+        class="mx-auto grid max-w-[1096px] justify-center gap-6 pb-4 text-center sm:-mb-52 sm:h-[800px] sm:grid-cols-[380px,1fr] sm:items-center sm:px-4"
       >
-        <div
-          class="grid grid-cols-1 overflow-y-hidden sm:relative sm:order-1 sm:overflow-hidden"
-        >
+        <div class="grid grid-cols-1 overflow-y-hidden sm:order-1">
           <img
             class="col-start-1 row-start-1 mt-[0.75rem] sm:hidden"
             src="images/bg-intro-mobile.svg"
             alt=""
           />
           <img
-            class="col-start-1 row-start-1 -mt-[2.25rem] hidden translate-x-[4rem] sm:absolute sm:right-0 sm:block sm:scale-150"
+            class="w-[900px] absolute top-[-55px] right-[-60px] -z-10 -mt-[2.25rem] hidden sm:block"
             src="images/bg-intro-desktop.svg"
             alt=""
           />
           <img
-            class="col-start-1 row-start-1 -mt-[3.9rem] px-2 sm:translate-x-[6rem]"
+            class="z-10 col-start-1 row-start-1 top-0 right-[0rem] -mt-[3.9rem] px-2 sm:absolute sm:w-[740px]"
             src="images/image-mockups.png"
             alt=""
           />
