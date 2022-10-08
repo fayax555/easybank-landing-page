@@ -29,18 +29,20 @@
 
   <body>
     <header>
-      <nav class="flex h-16 items-center justify-between px-5">
-        <p class="text-2xl font-extrabold text-slate-700">easybank</p>
+      <nav
+        class="fixed inset-0 flex h-16 items-center justify-between bg-white px-5 sm:hidden"
+      >
+        <img src="images/logo.svg" alt="" />
         <input class="hidden" type="checkbox" id="menu-toggle" />
         <ol
           class="absolute top-20 left-0 right-0 z-10 mx-auto w-[90%] rounded-lg bg-white py-4 text-center font-semibold [&>li]:px-2 [&>li]:py-2"
           id="menu"
         >
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
+          <li class="hover:bg-slate-200">Home</li>
+          <li class="hover:bg-slate-200">About</li>
+          <li class="hover:bg-slate-200">Contact</li>
+          <li class="hover:bg-slate-200">Blog</li>
+          <li class="hover:bg-slate-200">Careers</li>
         </ol>
         <label class="block h-6 w-6" for="menu-toggle"
           ><img
@@ -55,7 +57,25 @@
         </label>
       </nav>
 
-      <!-- Request Invite -->
+      <nav class="hidden shadow-lg sm:block">
+        <div
+          class="mx-auto flex h-20 max-w-[1094px] items-center justify-between px-4"
+        >
+          <img src="images/logo.svg" alt="" />
+          <ol class="flex gap-2 text-slate-600">
+            <li class="cursor-pointer px-3 hover:bg-slate-200">Home</li>
+            <li class="cursor-pointer px-3 hover:bg-slate-200">About</li>
+            <li class="cursor-pointer px-3 hover:bg-slate-200">Contact</li>
+            <li class="cursor-pointer px-3 hover:bg-slate-200">Blog</li>
+            <li class="cursor-pointer px-3 hover:bg-slate-200">Careers</li>
+          </ol>
+          <a
+            class="flex justify-self-center rounded-full bg-green-600 px-8 py-2.5 text-white"
+            href="#"
+            ><span class="-translate-y-[1px]">Request Invite</span></a
+          >
+        </div>
+      </nav>
 
       <div class="grid gap-6 pb-4 text-center">
         <div class="grid grid-cols-1 overflow-y-hidden">
