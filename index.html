@@ -89,12 +89,12 @@
             alt=""
           />
           <img
-            class="absolute lg:right-[-220px] -z-10 hidden top-[-20px] sm:block w-[800px] lg:top-[-55px] lg:-mt-[2.25rem] lg:w-[1000px]"
+            class="absolute top-[-20px] -z-10 hidden w-[800px] sm:block lg:right-[-220px] lg:top-[-55px] lg:-mt-[2.25rem] lg:w-[1000px]"
             src="images/bg-intro-desktop.svg"
             alt=""
           />
           <img
-            class="top-0 right-[-7rem] z-10 col-start-1 row-start-1 px-2 sm:absolute sm:max-w-[450px] -mt-[3.9rem] lg:mt-[-2rem] lg:w-[700px] lg:max-w-max"
+            class="top-0 right-[-7rem] z-10 col-start-1 row-start-1 -mt-[3.9rem] px-2 sm:absolute sm:max-w-[450px] lg:mt-[-2rem] lg:w-[700px] lg:max-w-max"
             src="images/image-mockups.png"
             alt=""
           />
@@ -121,7 +121,9 @@
 
     <main>
       <section class="my-16 bg-slate-100 py-16">
-        <div class="grid gap-4 px-5 pb-14 text-center">
+        <div
+          class="mx-auto grid max-w-[1096px] gap-4 px-5 pb-14 text-center sm:text-left"
+        >
           <h2 class="text-4xl text-slate-700">Why choose Easybank?</h2>
           <p class="text-slate-500">
             We leverage Open Banking to turn your bank account into your
@@ -129,8 +131,12 @@
           </p>
         </div>
 
-        <div class="grid gap-8 px-5 text-center">
-          <article class="grid justify-items-center gap-4">
+        <div
+          class="mx-auto grid max-w-[1096px] gap-8 px-5 text-center sm:grid-cols-4 sm:text-left"
+        >
+          <article
+            class="grid justify-items-center gap-4 sm:justify-items-start"
+          >
             <img src="images/icon-online.svg" alt="" />
             <h3 class="text-2xl text-slate-700">Online Banking</h3>
             <p class="text-slate-500">
@@ -168,110 +174,121 @@
         </div>
       </section>
 
-      <section class="px-5 py-14">
-        <h2 class="mb-8 text-center text-4xl text-slate-700">
+      <section class="mx-auto max-w-[1096px] px-5 py-14">
+        <h2 class="mb-8 text-center text-4xl text-slate-700 sm:text-left">
           Latest Articles
         </h2>
 
-        <article class="mb-6 rounded-md bg-slate-200 shadow-sm">
-          <img
-            class="h-[13rem] w-full rounded-t-lg object-cover"
-            src="images/image-currency.jpg"
-            alt=""
-          />
-          <div class="grid gap-2 p-7">
-            <p class="text-sm text-slate-500">By Claire Robinson</p>
-            <h3 class="text-[1.1rem] leading-6 text-slate-800">
-              Receive money in any currency with no fees
-            </h3>
-            <p class="mb-4 text-[0.8rem] text-slate-600">
-              The world is getting smaller and we’re becoming more mobile. So
-              why should you be forced to only receive money in a single …
-            </p>
-          </div>
-        </article>
+        <div class="grid-cols-4 gap-6 sm:grid">
+          <article class="mb-6 rounded-md shadow-sm">
+            <img
+              class="h-[13rem] w-full rounded-t-lg object-cover"
+              src="images/image-currency.jpg"
+              alt=""
+            />
+            <div class="grid gap-2 p-7">
+              <p class="text-sm text-slate-500">By Claire Robinson</p>
+              <h3 class="text-[1.1rem] leading-6 text-slate-800">
+                Receive money in any currency with no fees
+              </h3>
+              <p class="mb-4 text-[0.8rem] text-slate-600">
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
+          </article>
 
-        <article class="mb-6 rounded-md bg-slate-200 shadow-sm">
-          <img
-            class="h-[13rem] w-full rounded-t-lg object-cover"
-            src="images/image-restaurant.jpg"
-            alt=""
-          />
-          <div class="grid gap-2 p-7">
-            <p class="text-sm text-slate-500">By Wilson Hutton</p>
-            <h3 class="text-[1.1rem] leading-6 text-slate-800">
-              Treat yourself without worrying about money
-            </h3>
-            <p class="mb-4 text-[0.8rem] text-slate-600">
-              Our simple budgeting feature allows you to separate out your
-              spending and set realistic limits each month. That means you …
-            </p>
-          </div>
-        </article>
+          <article class="mb-6 rounded-md shadow-sm">
+            <img
+              class="h-[13rem] w-full rounded-t-lg object-cover"
+              src="images/image-restaurant.jpg"
+              alt=""
+            />
+            <div class="grid gap-2 p-7">
+              <p class="text-sm text-slate-500">By Wilson Hutton</p>
+              <h3 class="text-[1.1rem] leading-6 text-slate-800">
+                Treat yourself without worrying about money
+              </h3>
+              <p class="mb-4 text-[0.8rem] text-slate-600">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
+          </article>
 
-        <article class="mb-6 rounded-md bg-slate-200 shadow-sm">
-          <img
-            class="h-[13rem] w-full rounded-t-lg object-cover"
-            src="images/image-plane.jpg"
-            alt=""
-          />
-          <div class="grid gap-2 p-7">
-            <p class="text-sm text-slate-500">By Wilson Hutton</p>
-            <h3 class="text-[1.1rem] leading-6 text-slate-800">
-              Take your Easybank card wherever you go
-            </h3>
-            <p class="mb-4 text-[0.8rem] text-slate-600">
-              We want you to enjoy your travels. This is why we don’t charge any
-              fees on purchases while you’re abroad. We’ll even show you …
-            </p>
-          </div>
-        </article>
+          <article class="mb-6 rounded-md shadow-sm">
+            <img
+              class="h-[13rem] w-full rounded-t-lg object-cover"
+              src="images/image-plane.jpg"
+              alt=""
+            />
+            <div class="grid gap-2 p-7">
+              <p class="text-sm text-slate-500">By Wilson Hutton</p>
+              <h3 class="text-[1.1rem] leading-6 text-slate-800">
+                Take your Easybank card wherever you go
+              </h3>
+              <p class="mb-4 text-[0.8rem] text-slate-600">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
+          </article>
 
-        <article class="mb-6 rounded-md bg-slate-200 shadow-sm">
-          <img
-            class="h-[13rem] w-full rounded-t-lg object-cover"
-            src="images/image-confetti.jpg"
-            alt=""
-          />
-          <div class="grid gap-2 p-7">
-            <p class="text-sm text-slate-500">By Claire Robinson</p>
-            <h3 class="text-[1.1rem] leading-6 text-slate-800">
-              Our invite-only Beta accounts are now live!
-            </h3>
-            <p class="mb-4 text-[0.8rem] text-slate-600">
-              After a lot of hard work by the whole team, we’re excited to
-              launch our closed beta. It’s easy to request an invite through the
-              site ...
-            </p>
-          </div>
-        </article>
+          <article class="mb-6 rounded-md shadow-sm">
+            <img
+              class="h-[13rem] w-full rounded-t-lg object-cover"
+              src="images/image-confetti.jpg"
+              alt=""
+            />
+            <div class="grid gap-2 p-7">
+              <p class="text-sm text-slate-500">By Claire Robinson</p>
+              <h3 class="text-[1.1rem] leading-6 text-slate-800">
+                Our invite-only Beta accounts are now live!
+              </h3>
+              <p class="mb-4 text-[0.8rem] text-slate-600">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer
-      class="grid justify-items-center gap-8 bg-blue-900 py-10 text-slate-200"
-    >
-      <ul class="flex gap-4">
-        <li><img class="w-7" src="images/icon-facebook.svg" alt="" /></li>
-        <li><img class="w-7" src="images/icon-youtube.svg" alt="" /></li>
-        <li><img class="w-7" src="images/icon-twitter.svg" alt="" /></li>
-        <li><img class="w-7" src="images/icon-pinterest.svg" alt="" /></li>
-        <li><img class="w-7" src="images/icon-instagram.svg" alt="" /></li>
-      </ul>
-      <ol class="grid gap-3 text-center">
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
-        <li>Support</li>
-        <li>Privacy Policy</li>
-      </ol>
-      <a
-        class="-translate-y-[1px] justify-self-center rounded-full bg-green-600 px-8 py-2.5 text-white"
-        href="#"
-        >Request Invite</a
-      >
-      <p class="text-slate-400">© Easybank. All Rights Reserved</p>
+    <footer class="bg-blue-900 py-10 text-slate-200">
+      <div class="mx-auto grid max-w-[1096px] gap-8 px-5 sm:grid-cols-3">
+        <div class="grid justify-items-center gap-8 sm:justify-items-start">
+          <img src="images/logo-white.svg" alt="" />
+          <ul class="flex gap-4">
+            <li><img class="w-7" src="images/icon-facebook.svg" alt="" /></li>
+            <li><img class="w-7" src="images/icon-youtube.svg" alt="" /></li>
+            <li><img class="w-7" src="images/icon-twitter.svg" alt="" /></li>
+            <li><img class="w-7" src="images/icon-pinterest.svg" alt="" /></li>
+            <li><img class="w-7" src="images/icon-instagram.svg" alt="" /></li>
+          </ul>
+        </div>
+        <ol
+          class="grid justify-center gap-4 text-center sm:grid-cols-2 sm:justify-items-start"
+        >
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Careers</li>
+          <li>Support</li>
+          <li>Privacy Policy</li>
+        </ol>
+        <div class="contents items-center sm:grid">
+          <a
+            class="-translate-y-[1px] justify-self-center rounded-full bg-green-600 px-8 py-2.5 text-white sm:justify-self-end"
+            href="#"
+            >Request Invite</a
+          >
+          <p class="text-center text-slate-400 sm:text-right">
+            © Easybank. All Rights Reserved
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
