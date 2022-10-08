@@ -30,7 +30,7 @@
   <body>
     <header>
       <nav
-        class="fixed inset-0 flex h-16 items-center justify-between bg-white px-5 sm:hidden"
+        class="fixed inset-0 bottom-auto flex h-16 items-center justify-between bg-white px-5 sm:hidden"
       >
         <img src="images/logo.svg" alt="" />
         <input class="hidden" type="checkbox" id="menu-toggle" />
@@ -57,7 +57,9 @@
         </label>
       </nav>
 
-      <nav class="hidden shadow-lg sm:block">
+      <nav
+        class="fixed inset-0 bottom-auto z-10 hidden bg-white shadow-lg sm:block"
+      >
         <div
           class="mx-auto flex h-20 max-w-[1094px] items-center justify-between px-4"
         >
@@ -77,21 +79,30 @@
         </div>
       </nav>
 
-      <div class="grid gap-6 pb-4 text-center">
-        <div class="grid grid-cols-1 overflow-y-hidden">
+      <div
+        class="mx-auto grid max-w-[1096px] justify-center gap-6 pb-4 text-center sm:-mb-52 sm:h-[680px] sm:grid-cols-[380px,auto] sm:items-center sm:overflow-hidden sm:px-4"
+      >
+        <div
+          class="grid grid-cols-1 overflow-y-hidden sm:relative sm:order-1 sm:overflow-hidden"
+        >
           <img
-            class="col-start-1 row-start-1 -mt-[2.25rem]"
+            class="col-start-1 row-start-1 mt-[0.75rem] sm:hidden"
             src="images/bg-intro-mobile.svg"
             alt=""
           />
           <img
-            class="col-start-1 row-start-1 -mt-[7.5rem] px-2"
+            class="col-start-1 row-start-1 -mt-[2.25rem] hidden translate-x-[4rem] sm:absolute sm:right-0 sm:block sm:scale-150"
+            src="images/bg-intro-desktop.svg"
+            alt=""
+          />
+          <img
+            class="col-start-1 row-start-1 -mt-[3.9rem] px-2 sm:translate-x-[6rem]"
             src="images/image-mockups.png"
             alt=""
           />
         </div>
 
-        <div class="-mt-16 grid gap-6 px-4">
+        <div class="-mt-16 grid gap-6 px-4 sm:text-left">
           <h1 class="text-4xl text-slate-800">
             Next generation digital banking
           </h1>
@@ -102,7 +113,7 @@
           </p>
 
           <a
-            class="flex justify-self-center rounded-full bg-green-600 px-8 py-2.5 text-white"
+            class="flex justify-self-center rounded-full bg-green-600 px-8 py-2.5 text-white sm:justify-self-start"
             href="#"
             ><span class="-translate-y-[1px]">Request Invite</span></a
           >
